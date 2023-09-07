@@ -18,12 +18,11 @@ while with my complex operation it threw an error VM error where it reverted to 
 contract loopingChallenge {
 
     //simple operation - will just store the values of loop1
-    function runningThLoops() external pure  returns (uint){
+    function runningThLoops() external pure {
         uint tempval = 0;
         for( uint loop1 = 0;  loop1 < 1000; loop1++){
             tempval+=loop1;
         }
-        return tempval;
     }
 
     //complex operation - wil run an funtion of exponential then the other function will call the expenential funtion to square 100 times;
